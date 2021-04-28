@@ -3,20 +3,15 @@ namespace HandsOn
     public class HandsOnSample
     {
         /// <summary>
-        /// ユニークに特定したい目的があったとする
-        /// </summary>
-        public static readonly Guid guid = new Guid("483336A7-DFFB-4F9F-9F7E-76DAF0C328D7");
-     
-        /// <summary>
-        /// 
+        ///
         /// </summary>
         /// <param name="args"></param>
         /// <returns></returns>
         public static void Main(string[] args)
         {
             System.Console.Out.WriteLine("Hello");
-            System.Diagnostics.Debug.Assert(EXPR != null, "MESSAGE");
             System.Console.Out.WriteLine("args = {0}", args);
+            System.Diagnostics.Debug.Assert(args[ 0 ] != null, "Not Supported: args");
         }
 
         /// <summary>
